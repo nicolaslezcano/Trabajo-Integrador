@@ -1,0 +1,126 @@
+/*--------Seccion1-------- */
+.cuerpo__cabecera {
+    align-items: center;
+    background-color: #1e1f29;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.cabecera__img {
+    background-image: url("../Img/logo1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    height: 3rem;
+    width: 15rem;
+}
+
+.menu__lista {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.lista__enlace {
+    background-color: var(--color-violeta);
+    transform: skewX(-36deg);
+}
+
+.lista__enlace:nth-child(2) {
+    background-color: var(--color-verde);
+}
+
+.enlace__a {
+    color: var(--color-oscuro);
+    display: block;
+    font-family: var(--font-arimo);
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: bolder;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transform: skewX(36deg);
+    width: 12rem;
+}
+
+.hamburger {
+    display: none;
+}
+/*--------------------- */
+
+/* Media queries para tablets */
+@media only screen and (max-width: 1023px) {
+    /*--------Seccion1-------- */
+    .cuerpo__cabecera {
+        background-color: var(--color-violeta);
+        justify-content: flex-start;
+        position: static;
+    }
+
+    .cabecera__img {
+        background-image: url("../Img/logo2.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 90%;
+        height: 2.5rem;
+        width: 13rem;
+    }
+
+    .menu__lista {
+        align-items: center;
+        background-color: var(--color-negro);
+        flex-direction: column;
+        gap: 3rem;
+        height: 100%;
+        justify-content: center;
+        left: 0;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 98;
+    }
+
+    .enlace__a {
+        font-size: 1.5rem;
+        padding: 1.5rem 1rem;
+        width: 20rem;
+    }
+
+    .hamburger {
+        background-color: var(--color-verde);
+        border-radius: 50%;
+        bottom: 0;
+        display: block;
+        height: 90px;
+        margin: 10px;
+        position: fixed;
+        right: 0;
+        width: 90px;
+        z-index: 99;
+    }
+
+    .menuDesativado {
+        display: none;
+    }
+    /* ------------------------ */
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    /*--------Seccion1-------- */
+    .cuerpo__cabecera {
+        justify-content: center;
+    }
+
+    .enlace__a {
+        font-size: 1rem;
+        padding: 1.5rem 1rem;
+        width: 15rem;
+    }
+    /* ------------------------ */
+}

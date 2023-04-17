@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una pagina sobre noticias tecnologicas">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Java">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;1,600;1,700&family=JetBrains+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <!-- COLOCAR SU NOMBRE -->
+    <meta name="author" content="Cristian_Diaz_Vega Ignacio_Miguez_Sandes Nicolas_Lezcano">
+    <!-- hamburgers -->
+    <link rel="stylesheet" href="./hamburgers/dist/hamburgers.css">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./Style/reset.css">
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="./Style/seccion1.css">
+    <link rel="stylesheet" href="./Style/seccion2.css">
+    <link rel="stylesheet" href="./Style/seccion3.css">
+    <link rel="stylesheet" href="./Style/seccion4.css">
+    <link rel="stylesheet" href="./Style/seccion5.css">
+    <link rel="stylesheet" href="./Style/seccion6.css">
+    <link rel="icon" href="./Img/code1.svg">
+    <title>BlackCode</title>
+</head>
+
+<body class="cuerpo">
+    <!-- Seccion 1-->
+    <header class="cuerpo__cabecera">
+        <a href="#nosotros"><div id="inicio" class="cabecera__img"></div></a>
+        <nav class="cabecera__menu menuDesativado">
+            <ul class="menu__lista">
+                <li class="lista__enlace"><a href="#unete" class="enlace__a">ÚNETENOS</a></li>
+                <li class="lista__enlace"><a href="#integrantes" class="enlace__a">INTEGRANTES</a></li>
+                <li class="lista__enlace"><a href="#contacto" class="enlace__a">TRABAJA CON NOSOTROS</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger hamburger--arrow" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+    <main class="cuerpo__main">
+        <!-- Seccion 2-->
+        <article class="nosotros acerca-de horizontal-padding vertical-padding" id="nosotros">
+            <aside class="nosotros-contenedor">
+                <section class="nosotros-textos">
+                    <div class="nosotros-titulo-img">
+                        <h3 class="nosotros-titulo">¿Qué es BlackCode?</h3>
+                        <img src="./Img/Group.svg" alt="">
+                    </div>
+                    <ul class="nosotros-lista">
+                        <li class="nosotros-info">
+                            Blackcode es una página web de noticias con un
+                            enfoque en la tecnología oscura, sombría y poco convencional.
+                        </li>
+                        <li class="nosotros-info">
+                            Ofrecemos una perspectiva diferente a la tecnología, explorando
+                            temas como la privacidad, la seguridad, el hacking ético, el software oscuro y más...
+                        </li>
+                    </ul>
+                </section>
+                <section class="nosotros-img">
+                    <span class="nosotros-btn"><img class="nosotros-foto" src="./Img/pantalla.jpg" alt=""></span>
+                </section>
+            </aside>
+        </article>
+        <!-- Seccion 3-->
+        <article id="unete" class="main__unete">
+            <h2 class="unete__titulo"><strong class="titulo__tex">ÚNETE A LA COMUNIDAD</strong></h2>
+            <p class="unete__texto">ÚNETE A NUESTRA COMUNIDAD EN LÍNEA Y DESCUBRE UN MUNDO DE NOTICIAS Y ARTÍCULOS SOBRE
+                LA TECNOLOGÍA OSCURA Y SOMBRÍA, EL HACKING ÉTICO, LA CRIPTOGRAFÍA Y MÁS.</p>
+            <aside class="unete__info">
+                <form action="" class="unete__inscrip">
+                    <label class="inscrip__la" for="name">INGRESE SU NOMBRE</label>
+                    <input class="inscrip__in" id="name" type="text" name="name" placeholder="Juan cortes">
+                    <label class="inscrip__la" for="mail">INGRESE SU MAIL</label>
+                    <input class="inscrip__in" id="mail" type="email" name="mail" placeholder="Juan89cortes@gmail.com">
+                    <label class="inscrip__la" for="phone">INGRESE SU NÚMERO DE TELÉFONO</label>
+                    <input class="inscrip__in" id="phone" type="text" name="phone" placeholder="543804213412">
+                    <fieldset class="inscrip__fiel">
+                        <button class="fiel__boton uneBoton2" value="cancelar">CANCELAR</button>
+                        <button class="fiel__boton uneBoton1" value="enviar">SIGUIENTE</button>
+                    </fieldset>
+                </form>
+                <img class="info__img" src="./Img/fig2.svg" alt="Pesonas uniendose">
+            </aside>
+        </article>
+        <!-- Seccion 4-->
+        <article id="integrantes" class="main__integrantes">
+            <aside class="integrantes__lista">
+                <h2 class="lista__titulo">INTEGRANTES DE BLACKCODE</h2>
+                <ul id="#contenedorTarjetas" class="lista__contenedor">
+                    <li class="contenedor__tarjeta">
+                        <img class="tarjeta__img" src="./Img/persona2.svg">
+                        <h3 class="tarjeta__titu">Ignacio</h3>
+                        <p class="tarjeta__text">Diseño</p>
+                    </li>
+                    <li class="contenedor__tarjeta">
+                        <img class="tarjeta__img" src="./Img/persona1.svg">
+                        <h3 class="tarjeta__titu">Cristian</h3>
+                        <p class="tarjeta__text">Estructura</p>
+                    </li>
+                    <li class="contenedor__tarjeta">
+                        <img class="tarjeta__img" src="./Img/persona3.svg">
+                        <h3 class="tarjeta__titu">Nicolas</h3>
+                        <p class="tarjeta__text">Control</p>
+                    </li>
+                </ul>        
+            </aside>
+        </article>
+        <!-- Seccion 5-->
+        <article id="contacto" class="main__trabaja">
+            <h2 class="trabaja__titulo"><strong class="titulo__tex">TRABAJA CON NOSOTROS</strong></h2>
+            <p class="trabaja__texto">ÚNETE A NUESTRO EQUIPO DE ESCRITORES Y EDITORES APASIONADOS POR LA TECNOLOGÍA Y LA
+                PRIVACIDAD EN BLACKCODE.
+                CONTRIBUYE CON ARTÍCULOS ÚNICOS Y DESCUBRE UN MUNDO DE NOTICIAS POCO CONVENCIONALES EN LA TECNOLOGÍA.
+                ¡TRABAJA CON NOSOTROS HOY Y SÉ PARTE DE NUESTRA MISIÓN!</p>
+            <aside class="trabajo__info">
+                <form action="" class="info__solicitud">
+                    <label class="solicitud__la" for="name">INGRESE SU NOMBRE</label>
+                    <input class="solicitud__in" id="name" type="text" name="name" placeholder="Juan cortes">
+                    <label class="solicitud__la" for="mail">INGRESE SU MAIL</label>
+                    <input class="solicitud__in" id="mail" type="email" name="mail"
+                        placeholder="Juan89cortes@gmail.com">
+                    <label class="solicitud__la" for="phone">INGRESE SU NÚMERO DE TELÉFONO</label>
+                    <input class="solicitud__in" id="phone" type="text" name="phone" placeholder="543807239021">
+                    <fieldset class="solicitud__env cont">
+                        <label class="solicitud__la" for="archivo">SUBIR CV</label>
+                        <input class="solicitud__oculto" type="file">
+                        <button class="env__boton archivo infBotonAr" value="archivo">Archivo</button>
+                    </fieldset>
+                    <label class="solicitud__la" for="mail">MENSAJE</label>
+                    <textarea class="solicitud__in  solicitud__mesaje" name="" id="" cols="30" rows="10"></textarea>
+                    <fieldset class="solicitud__env">
+                        <button class="env__boton infBoton2" value="cancelar">CANCELAR</button>
+                        <button class="env__boton infBoton1" value="enviar">ENVIAR</button>
+                    </fieldset>
+                </form>
+                <img class="solicitud__img" src="./Img/trabajar.svg" alt="Pesonas uniendose">
+            </aside>
+        </article>
+    </main>
+    <!-- Seccion 6-->
+    <footer class="cuerpo__pie">
+        <p class="pie__text">DERECHOS DE AUTOR 2023 &copy;</p>
+        <aside class="pie__enlaces">
+            <a href="https://es-la.facebook.com/"><img class="enlaces__img" src="./Img/facebook.svg" alt=""></a>
+            <a href="https://www.reddit.com/"><img class="enlaces__img" src="./Img/reddit.svg" alt=""></a>
+            <a href="https://twitter.com/"><img class="enlaces__img" src="./Img/twitter.svg" alt=""></a>
+        </aside>
+    </footer>
+    <script src="./Javascript/script.js"></script>
+</body>
+
+</html>

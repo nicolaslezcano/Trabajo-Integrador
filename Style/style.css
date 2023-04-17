@@ -1,0 +1,45 @@
+/* VARIABLES DE CSS */
+:root {
+    --color-violeta: #e59cff;
+    --color-verde: #4cffa9;
+    --color-oscuro: #15161c;
+    --color-negro: #1e1f29;
+    --color-blanco: #ffffff;
+    --font-arimo: 'Arimo', sans-serif;
+    --font-jetBreins: 'JetBrains Mono', monospace;
+}
+
+/* COLOR DE FONDO */
+.cuerpo {
+    background-color: var(--color-oscuro);
+}
+
+article[id]{
+    scroll-margin-top: 50px;
+} /*le damos un margen a nuestro navegador cuando le
+    seleccionamos la seccion*/
+
+html{
+    scroll-behavior: smooth;
+} /*va a bjar mas lento a la seccion*/
+
+.horizontal-padding {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.vertical-padding {
+padding-top: 25px;
+padding-bottom: 25px;
+}
+
+@media (min-width:950px) {
+    .horizontal-padding {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .vertical-padding {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    }
+}
+

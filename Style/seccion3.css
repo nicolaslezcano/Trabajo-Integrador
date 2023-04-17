@@ -1,0 +1,277 @@
+
+/*--------Seccion3-------- */
+.main__unete {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    margin: 3rem auto;
+    width: 75%;
+}
+
+.unete__titulo {
+    align-self: flex-start;
+    background-color: var(--color-verde);
+    margin-left: 2rem;
+    padding: 1.5vw 6vw;
+    transform: skewX(-36deg);
+}
+
+.titulo__tex {
+    display: block;
+    font-family: var(--font-arimo);
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: bold;
+    transform: skewX(36deg);
+}
+
+.unete__texto {
+    color: var(--color-blanco);
+    font-family: var(--font-jetBreins);
+    font-size: 1.4vw;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 2;
+    text-align: center;
+    width: 85%;
+}
+
+.unete__info {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.unete__inscrip {
+    background-color: var(--color-negro);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    width: 50%;
+
+}
+
+.inscrip__la {
+    color: var(--color-blanco);
+    font-family: var(--font-jetBreins);
+    font-size: 1vw;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.inscrip__in {
+    border: none;
+    border-radius: 0.5rem;
+    font-family: var(--font-jetBreins);
+    font-size: 1vw;
+    padding: 0.6rem;
+}
+
+.inscrip__fiel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.fiel__boton {
+    background-color: var(--color-violeta);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--color-oscuro);
+    font-family: var(--font-jetBreins);
+    font-size: 1vw;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0.5rem;
+    width: 25%;
+}
+
+.fiel__boton:nth-child(2) {
+    background-color: var(--color-verde);
+}
+
+.info__img {
+    width: 50%;
+}
+
+/* Informacion del formulario */
+.informacion {
+    align-items: center;
+    background-color: var(--color-negro);
+    background-image: url("../Img/code1.svg");
+    background-position: top 1rem right 1rem;
+    background-repeat: no-repeat;
+    background-size: 12%;
+    border: solid 2px var(--color-verde);
+    border-radius: 2rem;
+    color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-arimo);
+    font-size: 1.5vw;
+    gap: 2vw;
+    justify-content: center;
+    left: 50%;
+    opacity: 1;
+    padding: 3rem;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease-out;
+    z-index: 94;
+}
+
+.informacion.fade-out {
+    opacity: 0;
+}
+
+.informacion__boton {
+    background-color: var(--color-violeta);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--color-oscuro);
+    font-family: var(--font-jetBreins);
+    font-size: 1vw;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+/*--------------------- */
+
+/* Media queries para tablets */
+@media only screen and (max-width: 1023px) {
+    /*--------Sec3ion3-------- */
+    .main__unete {
+        width: 90%;
+    }
+
+    .unete__titulo {
+        align-self: center;
+        margin: 0;
+        padding: 2.5vw 32%;
+    }
+
+    .titulo__tex {
+        font-size: 2.2vw;
+    }
+
+    .unete__texto {
+        font-size: 2.2vw;
+        line-height: 2;
+        width: 90%;
+    }
+
+    .unete__info {
+        gap: 0;
+    }
+
+    .unete__inscrip {
+        gap: 2.6vw;
+        width: 100%;
+    }
+
+    .inscrip__la {
+        font-size: 2vw;
+        width: 50%;
+    }
+
+    .inscrip__in {
+        font-size: 2vw;
+        width: 50%;
+    }
+
+    .fiel__boton {
+        font-size: 2vw;
+    }
+
+    .info__img {
+        margin-top: 6vw;
+        position: absolute;
+        right: 6vw;
+        width: 40%;
+    }
+
+    /* Informacion del formulario */
+    .informacion {
+        font-size: 3vw;
+    }
+
+    .informacion__boton {
+        font-size: 3vw;
+    }
+
+    /* ------------------------ */
+}
+
+
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    /*--------Sec3ion3-------- */
+    .main__unete {
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .unete__titulo {
+        padding: 6vw 19%;
+    }
+
+    .titulo__tex {
+        font-size: 4vw;
+    }
+
+    .unete__texto {
+        font-size: 4vw;
+        width: 90%;
+    }
+    
+    .unete__inscrip {
+        background-image: url("../Img/code1.svg");
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 15%;
+        border-radius: 0;
+        gap: 8vw;
+        padding: 2rem 1rem;
+
+    }
+
+    .inscrip__la {
+        box-sizing: border-box;
+        font-size: 4vw;
+        width: 100%;
+    }
+
+    .inscrip__in {
+        box-sizing: border-box;
+        font-size: 4vw;
+        width: 100%;
+    }
+
+    .fiel__boton {
+        font-size: 4vw;
+        width: 35%;
+    }
+
+    .info__img {
+        display: none;
+    }
+
+    /* Informacion del formulario */
+    .informacion {
+        font-size: 4vw;
+        padding: 2rem;
+    }
+
+    .informacion__boton {
+        font-size: 4vw;
+    }
+    /* ------------------------ */
+}

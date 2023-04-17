@@ -1,0 +1,70 @@
+Únetenos     Integrantes     Trabaja con Nosotros
+
+
+¿Qué es BlackCode?
+
+Una página web de noticias tecnológicas con un enfoque en la tecnología oscura, sombría y poco convencional.
+Ofrecemos un enfoque diferente a la tecnología, explorando temas como la privacidad, la seguridad, el hacking ético, el software oscuro y más.
+
+Únete a la Comunidad
+
+Nuestra comunidad en línea y descubre un mundo de noticias y artículos sobre la tecnología oscura y sombría, el hacking ético, la criptografía y más.
+
+INGRESE SU NOMBRE
+INGRESE SU MAIL
+INGRESE SU NÚMERO DE TELÉFONO
+
+Integrantes de BlackCode
+
+Trabaja con Nosotros
+
+Únete a nuestro equipo de escritores y editores apasionados por la tecnología y la privacidad en BlackCode. 
+Contribuye con artículos únicos y descubre un mundo de noticias poco convencionales en la tecnología. ¡Trabaja con nosotros hoy y sé parte de nuestra misión!
+
+
+INGRESE SU NOMBRE
+INGRESE SU MAIL
+INGRESE SU NÚMERO DE TELÉFONO
+SUBIR CV ->
+MENSAJE
+
+Derechos de autor 2023
+
+____Paleta de colores____
+
+violeta
+#e59cff
+
+verde
+#4cffa9
+
+negro
+#090a0a
+
+negro-claro
+#1e1f29
+
+blaco
+#ffffff
+
+oscuro
+#030303
+
+_____________________________________
+placeholder="Juan cortes" 
+title="Escribe tu nombre" 
+required 
+minlength="3"
+pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+_____________________________________
+placeholder="Juan89cortes@gmail.com" 
+required 
+title="Email incorreto" 
+pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+_____________________________________
+title="Numero de telefono" 
+required 
+minlength="10"
+maxlength="20"
+pattern="^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$"
+_____________________________________

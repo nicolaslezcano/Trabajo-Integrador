@@ -1,0 +1,341 @@
+/*--------Seccion5-------- */
+.main__trabaja {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    margin: 3rem auto;
+    width: 75%;
+}
+
+.trabaja__titulo {
+    align-self: flex-start;
+    background-color: var(--color-violeta);
+    margin-left: 2rem;
+    padding: 1.5vw 6vw;
+    transform: skewX(-36deg);
+}
+
+.titulo__tex {
+    display: block;
+    font-family: var(--font-arimo);
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: bold;
+    transform: skewX(36deg);
+}
+
+.trabaja__texto {
+    color: var(--color-blanco);
+    font-family: var(--font-jetBreins);
+    font-size: 1.4vw;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 2;
+    text-align: center;
+    width: 85%;
+}
+
+.trabajo__info {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.info__solicitud {
+    background-color: var(--color-negro);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    justify-content: space-evenly;
+    padding: 1rem;
+    width: 50%;
+
+}
+
+.solicitud__la {
+    color: var(--color-blanco);
+    font-family: var(--font-jetBreins);
+    font-size: 1vw;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.solicitud__in {
+    border: none;
+    border-radius: 0.5rem;
+    font-family: var(--font-jetBreins);
+    font-size: 1vw;
+    padding: 0.6rem;
+}
+.solicitud__oculto{
+    display: none;
+}
+
+.solicitud__mesaje {
+    height: 15%;
+    resize: none;
+}
+
+.solicitud__env {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.env__boton {
+    background-color: var(--color-violeta);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--color-oscuro);
+    font-family: var(--font-jetBreins);
+    font-size: 1vw;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0.5rem;
+    width: 25%;
+}
+
+/* _________________ */
+.archivo {
+    background-image: url("../Img/archivo.svg");
+    background-position: right 0.5vw center;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    font-family: var(--font-arimo);
+    font-size: 1.4vw;
+    padding: 0.5rem;
+    text-align: left;
+    width: 24%;
+}
+
+
+.solicitud__env .solicitud__la {
+    align-items: center;
+    background-image: url("../Img/flecha2.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    display: flex;
+    height: 2rem;
+    width: 25%;
+}
+
+/* _________________ */
+.env__boton:nth-child(2) {
+    background-color: var(--color-verde);
+}
+
+.solicitud__img {
+    width: 50%;
+}
+
+/* Informacion del formulario */
+.informacion {
+    align-items: center;
+    background-color: var(--color-negro);
+    background-image: url("../Img/code1.svg");
+    background-position: top 1rem right 1rem;
+    background-repeat: no-repeat;
+    background-size: 12%;
+    border: solid 2px var(--color-verde);
+    border-radius: 2rem;
+    color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-arimo);
+    font-size: 1.5vw;
+    gap: 2vw;
+    justify-content: center;
+    left: 50%;
+    opacity: 1;
+    padding: 3rem;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease-out;
+    z-index: 94;
+}
+
+.informacion.fade-out {
+    opacity: 0;
+}
+
+.informacion__boton {
+    background-color: var(--color-violeta);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--color-oscuro);
+    font-family: var(--font-jetBreins);
+    font-size: 1vw;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+/*--------------------- */
+
+/* Media queries para tablets */
+@media only screen and (max-width: 1023px) {
+
+    /*--------Seccion5-------- */
+    .main__trabaja {
+        width: 90%;
+    }
+
+    .trabaja__titulo {
+        align-self: center;
+        margin: 0;
+        padding: 2.5vw 32%;
+    }
+
+    .titulo__tex {
+        font-size: 2.2vw;
+    }
+
+    .trabaja__texto {
+        font-size: 2.2vw;
+        line-height: 2;
+        width: 90%;
+    }
+
+    .trabajo__info {
+        gap: 0;
+    }
+
+    .info__solicitud {
+        gap: 0.5vw;
+        width: 100%;
+    }
+
+    .cont {
+        width: 50%;
+    }
+
+    .archivo {
+        background-size: 20%;
+        width: 35%;
+    }
+
+
+    .solicitud__env .solicitud__la {
+        background-size: 30%;
+        height: 2rem;
+        width: 35%;
+    }
+
+
+    .solicitud__la {
+        font-size: 2vw;
+        width: 50%;
+    }
+
+    .solicitud__in {
+        font-size: 2vw;
+        width: 50%;
+    }
+
+    .env__boton {
+        font-size: 2vw;
+    }
+
+    .solicitud__img {
+        margin-top: 20vw;
+        position: absolute;
+        right: 6vw;
+        width: 40%;
+    }
+
+    /* Informacion del formulario */
+    .informacion {
+        font-size: 3vw;
+    }
+
+    .informacion__boton {
+        font-size: 3vw;
+    }
+
+    /* ------------------------ */
+}
+
+
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+
+    /*--------Seccion5-------- */
+    .main__trabaja {
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .trabaja__titulo {
+        padding: 6vw 18%;
+    }
+
+    .titulo__tex {
+        font-size: 4vw;
+    }
+
+    .trabaja__texto {
+        font-size: 4vw;
+        width: 90%;
+    }
+
+    .info__solicitud {
+        background-image: url("../Img/code2.svg");
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 15%;
+        border-radius: 0;
+        gap: 2vw;
+        padding: 2rem 1rem;
+
+    }
+
+    .solicitud__la {
+        box-sizing: border-box;
+        font-size: 4vw;
+        width: 100%;
+    }
+
+    .solicitud__in {
+        box-sizing: border-box;
+        font-size: 4vw;
+        width: 100%;
+    }
+
+    .cont {
+        width: 100%;
+    }
+
+    .env__boton {
+        font-size: 4vw;
+        width: 35%;
+    }
+
+    .archivo {
+        font-size: 5vw;
+        padding: 4vw;
+        width: 35%;
+    }
+
+    .solicitud__img {
+        display: none;
+    }
+
+    /* Informacion del formulario */
+    .informacion {
+        font-size: 4vw;
+        padding: 2rem;
+    }
+
+    .informacion__boton {
+        font-size: 4vw;
+    }
+
+    /* ------------------------ */
+}
